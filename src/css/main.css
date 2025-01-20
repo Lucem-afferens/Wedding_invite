@@ -949,22 +949,6 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
     text-shadow: 3px -4px 5px #ff007767;
 }
 
-@media (min-width:2000px) {
-    div.cafe_img {
-        background-size:cover;
-        background-position-y: -700px;
-        background-attachment:fixed;
-    }
-
-}
-
-@media (max-width:1100px) {
-    div.cafe_img {
-        background-position-y:0;
-        background-attachment:fixed;
-    }
-}
-
 @media (max-width: 701px) {
     .we {
         font-size: 40px;
@@ -972,12 +956,12 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
     div.cafe_img {
         background-position-x:center;
         margin-bottom: 20px;
-        background-attachment:fixed;
+        background-size:cover;
     }
 
     div.wed_place_img {
         background-position-x:center;
-        background-attachment:fixed;
+        background-size:cover;
     }
 
     div.HM {
