@@ -763,6 +763,7 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
     div.cafe_img {
         background-size:cover;
         background-position-y: -700px;
+        background-attachment:fixed;
     }
 
 }
@@ -770,6 +771,7 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
 @media (max-width:1100px) {
     div.cafe_img {
         background-position-y:0;
+        background-attachment:fixed;
     }
 }
 
@@ -780,10 +782,12 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
     div.cafe_img {
         background-position-x:center;
         margin-bottom: 20px;
+        background-attachment:fixed;
     }
 
     div.wed_place_img {
         background-position-x:center;
+        background-attachment:fixed;
     }
 
     div.HM {
@@ -820,11 +824,15 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
     }
 
     div.p_2, p.wed_place, p.cafe, div.way_text, div.wishes, div.quest_text {
-        font-size: 16px;
+        font-size: 14px;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
     div.p_3 {
         font-size: 36px;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
     div.programm_day {
@@ -873,4 +881,30 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
         justify-content: space-between;
         height: 780px;
     }
+
+    section.section_8 div.flex {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    div.dear {
+        height: 100px;
+        width: 330px;
+        background: url("../img/welcome.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    div.p_2, p.wed_place, p.cafe, div.way_text, div.wishes, div.quest_text {
+        font-size: 12px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    div.p_3 {
+        font-size: 30px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
 }
+
+
