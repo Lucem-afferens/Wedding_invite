@@ -32,7 +32,7 @@ header {
     min-height: 60px;
     background-color: #fff5ee;
     position: relative;
-    display: block
+    display: block;
 }
 
 .flex_header {
@@ -68,6 +68,7 @@ section.section_main {
     margin-bottom: 15px;
     background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,075)), url("../img/main_1.JPG")  center center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 div.main {
@@ -210,6 +211,7 @@ div.wed_place_img {
     height: 680px;
     background: url('https://www.mos.ru/pgu2/imagor/zags/1920x1080/7372761a-d918-427c-913c-34c0ddf3e6ef');
     background-size: cover ;
+    background-attachment: fixed;
     background-position-y: bottom;
     float: left;
 }
@@ -233,6 +235,7 @@ div.cafe_img {
     height: 680px;
     background: url('https://s0.rbk.ru/v6_top_pics/media/img/3/80/756041484543803.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     float: left;
     background-size:cover;
     background-position-y:bottom;
@@ -784,11 +787,11 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
     }
 
     div.HM {
-        top: -18vh;
+        top: -9vh;
     }
 
     div.HM img {
-        height: 80px;
+        height: 200px;
     }
 }
 
@@ -816,7 +819,7 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
         background-size: cover;
     }
 
-    div.p_2 {
+    div.p_2, p.wed_place, p.cafe, div.way_text, div.wishes, div.quest_text {
         font-size: 16px;
     }
 
@@ -824,7 +827,17 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
         font-size: 36px;
     }
 
-    div.programm_day, div.quest_guest {
+    div.programm_day {
+        display: block;
+        position: relative;
+        height: 150px;
+        width: 370px;
+        background: url("../img/programm.png") center center no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    div.quest_guest {
         display: block;
         position: relative;
         height: 150px;
@@ -832,5 +845,32 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
         background: url("../img/quest.png") center center no-repeat;
         background-size: cover;
         margin: 0 auto;
+    }
+}
+
+@media (max-width:350px) {
+    div.block_1_text, div.block_2_text, div.block_3_text, div.block_4_text {
+        font-size: 18px;
+        width: 200px;
+        line-height: 1.3em;
+    }
+
+    div.block_1_text i, div.block_2_text i, div.block_3_text i, div.block_4_text i {
+        font-size: 14px;
+    }
+
+    section.section_7 {
+        display: flex;
+        position: relative;
+        height: 850px;
+        justify-content: center;
+    }
+    div.way_programm {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+        height: 780px;
     }
 }
