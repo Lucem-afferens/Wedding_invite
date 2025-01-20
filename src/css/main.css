@@ -784,7 +784,6 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
     div.cafe_img {
         background-position-x:center;
         margin-bottom: 20px;
-        background-attachment:fixed;
         background-size:cover;
     }
 
