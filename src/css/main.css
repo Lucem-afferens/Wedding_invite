@@ -77,7 +77,7 @@ section.section_main {
     height: 760px;
     padding-bottom: 13px;
     margin-bottom: 15px;
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,075)), url("../img/main_1.JPG")  center center no-repeat;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url("../img/WE.jpeg")  center -700px no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -997,8 +997,8 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
         background-size: cover;
     }
 
-    div.p_2, p.wed_place, p.cafe, div.way_text, div.wishes, div.quest_text {
-        font-size: 14px;
+    div.p_2, div p.wed_place, div p.cafe, div.way_text p, div.wishes p, div.quest_text {
+        font-size: 12px;
         margin-left: 3%;
         margin-right: 3%;
     }
@@ -1068,7 +1068,7 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
         background-size: cover;
     }
 
-    div.p_2, p.wed_place, p.cafe, div.way_text, div.wishes, div.quest_text {
+    div.p_2, div p.wed_place, div p.cafe, div.way_text, div.wishes p, div.quest_text {
         font-size: 12px;
         margin-left: 3%;
         margin-right: 3%;
