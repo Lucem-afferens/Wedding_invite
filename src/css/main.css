@@ -916,11 +916,14 @@ button.send {
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
+    border:0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
 
 button.send:hover {
     transform: scale(1.1);
     cursor: pointer;
+    box-shadow: 4px 7px 10px rgba(0,0,0,0.6);
 }
 
 section.section_10 {
