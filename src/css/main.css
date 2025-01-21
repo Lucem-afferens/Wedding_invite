@@ -1051,6 +1051,13 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
         height: 200px;
     }
 
+    div.p_2, div p.wed_place, div p.cafe, div.way_text p, div.wishes p, div.quest_text {
+        font-size: 16px;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-wrap: balance;
+    }
+
 }
 
 @media (max-width: 501px) {
