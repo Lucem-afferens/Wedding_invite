@@ -918,6 +918,7 @@ button.send {
     font-weight: 400;
     border:0;
     box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    color:#000;
 }
 
 button.send:hover {
