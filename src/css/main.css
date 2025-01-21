@@ -343,11 +343,13 @@ div.hr_2 {
     float: left;
         
     -webkit-animation-name: fade-in;
-        
+    -moz-animation-name: fade-in;
             animation-name: fade-in;
     -webkit-animation-fill-mode: both;
+    -moz-animation-name: both;
             animation-fill-mode: both;
     -webkit-animation-timing-function: linear;
+    -moz-animation-name: linear;
             animation-timing-function: linear;
 
     view-timeline-name: --fade-in-image;
