@@ -994,6 +994,38 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
         background-size: cover;
         background-attachment: fixed;
     }   
+} 
+
+@media (max-width: 845px) {
+    @-webkit-keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }
+    
+    @-moz-keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }
+    
+    @-o-keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }
+    
+    @-ms-keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }
 }
 
 @media (max-width: 701px) {
@@ -1018,6 +1050,7 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
     div.HM img {
         height: 200px;
     }
+
 }
 
 @media (max-width: 501px) {
