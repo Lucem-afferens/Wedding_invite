@@ -3,7 +3,7 @@
 
 * {
     margin: 0;
-    pad: 0;
+    padding: 0;
     max-width: 100%;
     max-height: 100%;
 }
@@ -1066,6 +1066,17 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
 
     div.block_1_text i, div.block_2_text i, div.block_3_text i, div.block_4_text i {
         font-size: 16px;
+    }
+
+    section.section_main div.main div.name_name {
+        text-align: center;
+    }
+
+    div.p_2, div p.wed_place, div p.cafe, div.way_text p, div.wishes p, div.quest_text {
+        font-size: 16px;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-wrap: pretty;
     }
 }
 
