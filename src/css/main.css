@@ -1,15 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap'); 
 
-
-* {
-    margin: 0;
-    pad: 0;
-    max-width: 100%;
-    max-height: 100%;
+@media (max-height:1500px) {
+    section.section_main {
+        display: block;
+        position: relative;
+        height: 760px;
+        min-height: 100%;
+        padding-bottom: 13px;
+        margin-bottom: 15px;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75)), url("../img/WE.jpeg")  center center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }   
 }
 
-a {
-    text-decoration: none;
+@media (max-width: 701px) {
+    .we {
+        font-size: 40px;
+    }
+    div.cafe_img {
+        background-position-x:center;
+        margin-bottom: 20px;
+        background-size:cover;
+    }
+
+    div.wed_place_img {
+        background-position-x:center;
+        background-size:cover;
+    }
+
+    div.HM {
+        top: -9vh;
+    }
+
+    div.HM img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 501px) {
+    div.block_1_img, div.block_2_img, div.block_3_img, div.block_4_img {
+        height: 75px;
+        width: 75px;
+    }
+
+    div.block_1_text, div.block_2_text, div.block_3_text, div.block_4_text {
+        font-size: 20px;
+        width: 250px;
+    }
+
+    div.block_1_text i, div.block_2_text i, div.block_3_text i, div.block_4_text i {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:401px) {
+    div.dear {
+        height: 130px;
+        width: 350px;
+        background: url("../img/welcome.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    div.p_2, div p.wed_place, div p.cafe, div.way_text p, div.wishes p, div.quest_text {
+        font-size: 12px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    div.p_3 {
+        font-size: 36px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    div.programm_day {
+        display: block;
+        position: relative;
+        height: 150px;
+        width: 370px;
+        background: url("../img/programm.png") center center no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    div.quest_guest {
+        display: block;
+        position: relative;
+        height: 150px;
+        width: 370px;
+        background: url("../img/quest.png") center center no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:350px) {
+    div.block_1_text, div.block_2_text, div.block_3_text, div.block_4_text {
+        font-size: 18px;
+        width: 200px;
+        line-height: 1.3em;
+    }
+
+    div.block_1_text i, div.block_2_text i, div.block_3_text i, div.block_4_text i {
+        font-size: 14px;
+    }
+
+    section.section_7 {
+        display: flex;
+        position: relative;
+        height: 850px;
+        justify-content: center;
+    }
+    div.way_programm {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+        height: 780px;
+    }
+
+    section.section_8 div.flex {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    div.dear {
+        height: 100px;
+        width: 330px;
+        background: url("../img/welcome.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    div.p_2, div p.wed_place, div p.cafe, div.way_text, div.wishes p, div.quest_text {
+        font-size: 12px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    div.p_3 {
+        font-size: 30px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
 }
 
 @-webkit-keyframes fade-in {
@@ -45,6 +179,36 @@ a {
         scale: 1.2;
         opacity: 0;
     }
+}
+
+@keyframes slidein {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 10px;
+    }
+}
+
+@keyframes slidein_heart {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 1.2;
+    }
+}
+
+
+* {
+    margin: 0;
+    pad: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -155,14 +319,7 @@ div.arrow {
     
 }
 
-@keyframes slidein {
-    from {
-        top: 0px;
-    }
-    to {
-        top: 10px;
-    }
-}
+
 
 section.section_welcome {
     height: 530px;
@@ -185,9 +342,13 @@ div.hr_2 {
     display: block;
     float: left;
         
-    animation-name: fade-in;
-    animation-fill-mode: both;
-    animation-timing-function: linear;
+    -webkit-animation-name: fade-in;
+        
+            animation-name: fade-in;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
 
     view-timeline-name: --fade-in-image;
     animation-timeline: --fade-in-image;
@@ -459,15 +620,6 @@ div.heart_img img {
     animation-name: slidein_heart;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-}
-
-@keyframes slidein_heart {
-    from {
-        scale: 1;
-    }
-    to {
-        scale: 1.2;
-    }
 }
 
 table .td {
@@ -982,150 +1134,6 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
     text-shadow: 3px -4px 5px #ff007767;
 }
 
-@media (max-height:1500px) {
-    section.section_main {
-        display: block;
-        position: relative;
-        height: 760px;
-        min-height: 100%;
-        padding-bottom: 13px;
-        margin-bottom: 15px;
-        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75)), url("../img/WE.jpeg")  center center no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }   
-}
 
-@media (max-width: 701px) {
-    .we {
-        font-size: 40px;
-    }
-    div.cafe_img {
-        background-position-x:center;
-        margin-bottom: 20px;
-        background-size:cover;
-    }
-
-    div.wed_place_img {
-        background-position-x:center;
-        background-size:cover;
-    }
-
-    div.HM {
-        top: -9vh;
-    }
-
-    div.HM img {
-        height: 200px;
-    }
-}
-
-@media (max-width: 501px) {
-    div.block_1_img, div.block_2_img, div.block_3_img, div.block_4_img {
-        height: 75px;
-        width: 75px;
-    }
-
-    div.block_1_text, div.block_2_text, div.block_3_text, div.block_4_text {
-        font-size: 20px;
-        width: 250px;
-    }
-
-    div.block_1_text i, div.block_2_text i, div.block_3_text i, div.block_4_text i {
-        font-size: 16px;
-    }
-}
-
-@media (max-width:401px) {
-    div.dear {
-        height: 130px;
-        width: 350px;
-        background: url("../img/welcome.png") center center no-repeat;
-        background-size: cover;
-    }
-
-    div.p_2, div p.wed_place, div p.cafe, div.way_text p, div.wishes p, div.quest_text {
-        font-size: 12px;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-
-    div.p_3 {
-        font-size: 36px;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-
-    div.programm_day {
-        display: block;
-        position: relative;
-        height: 150px;
-        width: 370px;
-        background: url("../img/programm.png") center center no-repeat;
-        background-size: cover;
-        margin: 0 auto;
-    }
-
-    div.quest_guest {
-        display: block;
-        position: relative;
-        height: 150px;
-        width: 370px;
-        background: url("../img/quest.png") center center no-repeat;
-        background-size: cover;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width:350px) {
-    div.block_1_text, div.block_2_text, div.block_3_text, div.block_4_text {
-        font-size: 18px;
-        width: 200px;
-        line-height: 1.3em;
-    }
-
-    div.block_1_text i, div.block_2_text i, div.block_3_text i, div.block_4_text i {
-        font-size: 14px;
-    }
-
-    section.section_7 {
-        display: flex;
-        position: relative;
-        height: 850px;
-        justify-content: center;
-    }
-    div.way_programm {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        align-items:center;
-        justify-content: space-between;
-        height: 780px;
-    }
-
-    section.section_8 div.flex {
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-
-    div.dear {
-        height: 100px;
-        width: 330px;
-        background: url("../img/welcome.png") center center no-repeat;
-        background-size: cover;
-    }
-
-    div.p_2, div p.wed_place, div p.cafe, div.way_text, div.wishes p, div.quest_text {
-        font-size: 12px;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-
-    div.p_3 {
-        font-size: 30px;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-}
 
 
