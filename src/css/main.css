@@ -12,6 +12,12 @@ a {
     text-decoration: none;
 }
 
+@-webkit-keyframes fade-in {
+    from {
+        scale: 1.2;
+        opacity: 0;
+    }
+}
 @keyframes fade-in {
     from {
         scale: 1.2;
@@ -78,8 +84,6 @@ section.section_main {
     min-height: 100%;
     padding-bottom: 13px;
     margin-bottom: 15px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.75))), url("../img/WE.jpeg")  center -700px no-repeat;
-    background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75)), url("../img/WE.jpeg")  center -700px no-repeat;
     background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75)), url("../img/WE.jpeg")  center -700px no-repeat;
     background-size: cover;
     background-attachment: fixed;
