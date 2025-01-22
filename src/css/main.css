@@ -65,9 +65,10 @@ body {
 header {
     width: 100%;
     max-height: 60px;
-    background-color: rgba(255,245,238, 0.1);
-    position: relative;
+    background-color: rgba(255,245,238, 0.6);
     display: block;
+    position: absolute;
+    z-index: 20;
 }
 
 
