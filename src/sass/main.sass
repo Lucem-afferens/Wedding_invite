@@ -1,0 +1,1115 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap')
+
+*
+  margin: 0
+  padding: 0
+  max-width: 100%
+  max-height: 100%
+
+a
+  text-decoration: none
+
+@keyframes fade-in
+  from
+    scale: 1.2
+    opacity: 0
+
+body
+  font-size: 18px
+  text-transform: uppercase
+  font-family: Georgia, 'Times New Roman', Times, serif
+  background: #fff5ee
+  width: 100%
+  line-height: 1.4em
+
+.container
+  width: 75%
+  max-width: 100%
+  margin: 0 auto
+
+header
+  width: 100%
+  max-height: 60px
+  background-color: rgba(255, 245, 238, 0.6)
+  display: block
+  position: absolute
+  z-index: 20
+
+.flex_header
+  width: 100%
+  height: 60px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: sticky
+
+#invite
+  text-transform: uppercase
+  display: block
+  float: left
+
+header svg
+  &.bi
+    display: block
+    float: left
+    position: relative
+
+  &:hover
+    cursor: pointer
+
+section.section_main
+  display: block
+  position: relative
+  height: 760px
+  min-height: 100%
+  padding-bottom: 13px
+  margin-bottom: 15px
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)), url("../img/WE.jpeg") center -700px no-repeat
+  background-size: cover
+  background-attachment: fixed
+
+div
+  &.main
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    position: relative
+    color: #fff
+
+  &.HM
+    position: relative
+    top: -13vh
+
+  &.name_name
+    position: relative
+    top: -15vh
+
+  &#hr_1
+    height: 0
+    width: 200px
+    height: 2px
+    background-color: #fff
+    border: 0
+    position: relative
+    top: -13vh
+
+  &.day
+    position: relative
+    top: -9vh
+
+  &.arrow
+    animation-duration: 800ms
+    animation-name: slidein
+    animation-iteration-count: infinite
+    animation-direction: alternate
+    position: relative
+
+@keyframes slidein
+  from
+    top: 0px
+
+  to
+    top: 10px
+
+section.section_welcome
+  height: 530px
+  width: 80%
+  margin: auto
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+
+div
+  &.hr_2
+    border: 0
+    height: 1px
+    width: 170px
+    background: #000
+    position: relative
+    display: block
+    float: left
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.dear
+    display: block
+    position: relative
+    height: 186px
+    width: 536px
+    background: url("../img/welcome.png") center center no-repeat
+    background-size: cover
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.p_2
+    display: block
+    position: relative
+    max-width: 700px
+    text-transform: uppercase
+    text-align: center
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.p_3
+    display: block
+    position: relative
+    float: left
+    font-family: "Comforter", serif
+    font-weight: 400
+    font-style: normal
+    font-size: 50px
+    text-transform: none
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.hr_3
+    border: 0
+    height: 1px
+    width: 170px
+    background: #000
+    position: relative
+    display: block
+    float: left
+    top: 40px
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+section.section_3
+  height: 2100px
+  padding-top: 30vh
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+
+div
+  &.wed_place
+    display: block
+    position: relative
+    width: 700px
+    text-align: center
+    align-self: center
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+    span.wed_place
+      text-decoration: underline
+
+  &.wed_place_img
+    display: block
+    position: relative
+    height: 680px
+    background: url('https://www.mos.ru/pgu2/imagor/zags/1920x1080/7372761a-d918-427c-913c-34c0ddf3e6ef')
+    background-size: cover
+    background-attachment: fixed
+    background-position-y: bottom
+    float: left
+
+  &.cafe
+    display: block
+    position: relative
+    float: left
+    width: 700px
+    text-align: center
+    align-self: center
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+    span.cafe
+      text-decoration: underline
+
+  &.cafe_img
+    display: block
+    position: relative
+    height: 680px
+    background: url('https://s0.rbk.ru/v6_top_pics/media/img/3/80/756041484543803.jpg')
+    background-repeat: no-repeat
+    background-attachment: fixed
+    float: left
+    background-size: cover
+    background-position-y: bottom
+    margin-bottom: 20px
+
+  &.way
+    display: block
+    position: relative
+    height: 116px
+    width: 560px
+    background: url("../img/way.png") center center no-repeat
+    background-size: cover
+    margin: 0 auto
+    top: 20px
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.way_text
+    display: block
+    position: relative
+    float: left
+    width: 560px
+    text-align: center
+    align-self: center
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+    span.way_text
+      text-decoration: underline
+
+section
+  &.section_4 div.map
+    display: block
+    position: relative
+    text-align: center
+    margin-bottom: 40px
+
+  &.section_5
+    display: flex
+    position: relative
+    height: 600px
+    width: 350px
+    margin: 0 auto
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+
+div.hr_4
+  border: 0
+  height: 1px
+  width: 170px
+  background: #000
+  position: relative
+  display: block
+  float: left
+  animation-name: fade-in
+  animation-fill-mode: both
+  animation-timing-function: linear
+  view-timeline-name: --fade-in-image
+  animation-timeline: --fade-in-image
+  animation-range: 15% 50%
+
+table
+  max-width: 100%
+  border-collapse: collapse
+  text-align: center
+
+td
+  width: 14.28%
+  height: 50px
+  font-size: 18px
+  vertical-align: middle
+
+th
+  font-size: 18px
+  padding: 10px
+  font-weight: 400
+  color: rgba(0, 0, 0, 0.7)
+
+.month-title
+  text-align: center
+  margin-bottom: 10px
+  display: block
+  position: relative
+  top: 45px
+  font-family: "Comforter", serif
+  font-weight: 400
+  font-style: normal
+  font-size: 50px
+  text-transform: none
+
+div.heart_img img
+  display: block
+  position: absolute
+  top: 364px
+  left: 51.7px
+  max-width: 100%
+  max-height: 100%
+  width: 50px
+  height: 50px
+  z-index: -1
+  animation-duration: 800ms
+  animation-name: slidein_heart
+  animation-iteration-count: infinite
+  animation-direction: alternate
+
+@keyframes slidein_heart
+  from
+    scale: 1
+
+  to
+    scale: 1.2
+
+table .td
+  color: #fff
+  font-size: 22px
+  font-weight: 600
+
+section.section_6
+  display: flex
+  position: relative
+  height: 240px
+  width: 100%
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+
+div
+  &.hr_5
+    border: 0
+    height: 1px
+    width: 170px
+    background: #000
+    position: relative
+    display: block
+    float: left
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.programm_day
+    display: block
+    position: relative
+    height: 180px
+    width: 536px
+    background: url("../img/programm.png") center center no-repeat
+    background-size: cover
+    margin: 0 auto
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+section.section_7
+  display: flex
+  position: relative
+  height: 1050px
+  justify-content: center
+
+div
+  &.way_programm
+    display: flex
+    position: relative
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    height: 980px
+
+  &.programm_block_1
+    display: flex
+    position: relative
+    width: 500px
+    justify-content: space-around
+    align-items: center
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.block_1_img
+    display: block
+    position: relative
+    border-radius: 50%
+    background: url("../img/programm_img1.jpg") no-repeat
+    background-position: 57.478% 68.723%
+    background-size: 144.574%
+    width: 100px
+    height: 100px
+
+  &.block_1_circle
+    display: block
+    position: relative
+    background-size: cover
+    width: 11px
+    height: 11px
+    background: #000
+    border-radius: 50%
+
+  &.block_1_text
+    display: block
+    position: relative
+    width: 317px
+    text-align: center
+    line-height: 35px
+    font-size: 22px
+
+    i
+      font-size: 20px
+      text-transform: none
+
+  &.programm_block_2
+    display: flex
+    position: relative
+    width: 500px
+    justify-content: space-around
+    align-items: center
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.block_2_img
+    display: block
+    position: relative
+    border-radius: 50%
+    background: url("../img/programm_img2.jpg") no-repeat
+    background-position: 0.000% 64.667%
+    background-size: 100.000%
+    width: 100px
+    height: 100px
+
+  &.block_2_circle
+    display: block
+    position: relative
+    background-size: cover
+    width: 11px
+    height: 11px
+    background: #000
+    border-radius: 50%
+
+  &.block_2_text
+    display: block
+    position: relative
+    width: 317px
+    text-align: center
+    line-height: 35px
+    font-size: 22px
+
+    i
+      font-size: 20px
+      text-transform: none
+
+  &.programm_block_3
+    display: flex
+    position: relative
+    width: 500px
+    justify-content: space-around
+    align-items: center
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.block_3_img
+    display: block
+    position: relative
+    border-radius: 50%
+    background: url("../img/programm_img3.jpg") no-repeat
+    background-position: 0.000% 13.333%
+    background-size: 100.000%
+    width: 100px
+    height: 100px
+    background-position-y: top
+
+  &.block_3_circle
+    display: block
+    position: relative
+    background-size: cover
+    width: 11px
+    height: 11px
+    background: #000
+    border-radius: 50%
+
+  &.block_3_text
+    display: block
+    position: relative
+    width: 317px
+    text-align: center
+    line-height: 35px
+    font-size: 22px
+
+    i
+      font-size: 20px
+      text-transform: none
+
+  &.programm_block_4
+    display: flex
+    position: relative
+    width: 500px
+    justify-content: space-around
+    align-items: center
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.block_4_img
+    display: block
+    position: relative
+    border-radius: 50%
+    background: url("../img/programm_img4.jpg") center center no-repeat
+    background-position: 0.000% 41.626%
+    background-size: 300.067%
+    width: 100px
+    height: 100px
+
+  &.block_4_circle
+    display: block
+    position: relative
+    background-size: cover
+    width: 11px
+    height: 11px
+    background: #000
+    border-radius: 50%
+
+  &.block_4_text
+    display: block
+    position: relative
+    width: 317px
+    text-align: center
+    line-height: 35px
+    font-size: 22px
+
+    i
+      font-size: 20px
+      text-transform: none
+
+  &.line_1
+    display: block
+    position: relative
+    width: 3px
+    height: 130px
+    background: #000
+    border: 0
+    left: -360px
+    top: 90px
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 30% 60%
+
+  &.line_2
+    display: block
+    position: relative
+    width: 3px
+    height: 260px
+    background: #000
+    border: 0
+    left: -363px
+    top: 220px
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 30% 60%
+
+  &.line_3
+    display: block
+    position: relative
+    width: 3px
+    height: 260px
+    background: #000
+    border: 0
+    left: -366px
+    top: 480px
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 30% 60%
+
+  &.line_4
+    display: block
+    position: relative
+    width: 3px
+    height: 147px
+    background: #000
+    border: 0
+    left: -369px
+    top: 740px
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 30% 60%
+
+  &.flex.wish
+    display: flex
+    position: relative
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    min-height: 660px
+    margin: 50px auto
+    text-wrap: pretty
+
+  &.hr_6
+    border: 0
+    height: 1px
+    width: 170px
+    background: #000
+    position: relative
+    display: block
+    float: left
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.wish_t
+    display: block
+    position: relative
+    height: 110px
+    width: 431px
+    background: url("../img/wishes.png") center center no-repeat
+    background-size: cover
+    margin: 0 auto
+    top: 20px
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.wishes
+    display: block
+    position: relative
+    text-align: center
+    width: 530px
+    font-size: 18px
+    line-height: 1.5em
+    font-weight: 400
+
+    p
+      animation-name: fade-in
+      animation-fill-mode: both
+      animation-timing-function: linear
+      view-timeline-name: --fade-in-image
+      animation-timeline: --fade-in-image
+      animation-range: 15% 50%
+
+section.section_9
+  display: block
+  position: relative
+  width: 90%
+  margin: auto
+  min-height: 1250px
+  font-size: 20px
+  padding-top: 20px
+  margin-bottom: 70px
+
+div
+  &.quest_guest
+    display: block
+    position: relative
+    height: 180px
+    width: 536px
+    background: url("../img/quest.png") center center no-repeat
+    background-size: cover
+    margin: 0 auto
+    top: 20px
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+  &.quest_text
+    display: block
+    position: relative
+    text-align: center
+    margin: 60px auto
+    width: 90%
+    line-height: 1.3em
+    font-size: 18px
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 15% 50%
+
+form
+  display: block
+  position: relative
+  max-width: 830px
+  margin: 0 auto
+  text-transform: none
+  line-height: 1.8rem
+  text-wrap: wrap
+
+.input, button.send
+  width: 90%
+  border: 1px solid rgba(0, 0, 0, 0.5)
+  border-radius: 40px
+  height: 60px
+  margin: 12px 0
+  padding: 0 15px
+  font-size: 16px
+  font-family: Georgia, 'Times New Roman', Times, serif
+
+.pointer:hover
+  cursor: pointer
+
+button.send
+  display: block
+  width: 260px
+  height: 55px
+  margin: 0 auto
+  background: rgb(255, 245, 238)
+  background: radial-gradient(circle, rgba(255, 245, 238, 1) 16%, rgba(255, 218, 195, 1) 100%)
+  border-radius: 40px
+  transition: all 500ms ease
+  font-size: 16px
+  font-family: Georgia, 'Times New Roman', Times, serif
+  font-weight: 400
+  border: 0
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4)
+  color: #000
+
+  &:hover
+    transform: scale(1.1)
+    cursor: pointer
+    box-shadow: -5px 6px 10px rgba(0, 0, 0, 0.6)
+
+section.section_10
+  height: 460px
+
+div.end
+  display: flex
+  position: relative
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  height: 100%
+
+.hr_7, .hr_8
+  border: 0
+  height: 1px
+  width: 170px
+  background: #000
+  position: relative
+  display: block
+  float: left
+
+.joy, .we
+  display: block
+  position: relative
+  max-width: 510px
+  text-align: center
+  font-size: 20px
+  line-height: 1.4em
+
+div
+  &.hr_1, &.hr_2, &.hr_3, &.hr_4, &.hr_5, &.hr_6, &.hr_7, &.hr_8
+    border: 0
+    max-height: 1px
+    max-width: 170px
+    background: #000
+    position: relative
+    display: block
+    float: left
+
+.we
+    text-align: center
+    margin-bottom: 10px
+    display: block
+    position: relative
+    font-family: "Comforter", serif
+    font-weight: 400
+    font-style: normal
+    font-size: 70px
+    text-transform: none
+    text-shadow: -5px 6px 5px #ffc0cb
+
+    animation-name: fade-in
+    animation-fill-mode: both
+    animation-timing-function: linear
+    view-timeline-name: --fade-in-image
+    animation-timeline: --fade-in-image
+    animation-range: 10% 25%
+
+@media (max-height: 1500px)
+  section.section_main
+    display: block
+    position: relative
+    height: 760px
+    min-height: 100%
+    padding-bottom: 13px
+    margin-bottom: 15px
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)), url("../img/WE.jpeg") center center no-repeat
+    background-size: cover
+    background-attachment: fixed
+
+@media (max-width: 845px)
+  @-webkit-keyframes fade-in
+    from
+      opacity: 0
+
+  @-moz-keyframes fade-in
+    from
+      opacity: 0
+
+  @-o-keyframes fade-in
+    from
+      opacity: 0
+
+  @-ms-keyframes fade-in
+    from
+      opacity: 0
+
+  @keyframes fade-in
+    from
+      opacity: 0
+
+@media (max-width: 701px)
+  .we
+    font-size: 40px
+
+  div
+    &.cafe_img
+      background-position-x: center
+      margin-bottom: 20px
+      background-size: cover
+
+    &.wed_place_img
+      background-position-x: center
+      background-size: cover
+
+    &.HM
+      top: -9vh
+
+      img
+        height: 200px
+
+    &.p_2
+      font-size: 16px
+      margin-left: 2%
+      margin-right: 2%
+      text-wrap: balance
+
+    p
+      &.wed_place, &.cafe
+        font-size: 16px
+        margin-left: 2%
+        margin-right: 2%
+        text-wrap: balance
+
+    &.way_text p, &.wishes p, &.quest_text
+      font-size: 16px
+      margin-left: 2%
+      margin-right: 2%
+      text-wrap: balance
+
+@media (max-width: 501px)
+  div
+    &.block_1_img, &.block_2_img, &.block_3_img, &.block_4_img
+      height: 75px
+      width: 75px
+
+    &.block_1_text, &.block_2_text, &.block_3_text, &.block_4_text
+      font-size: 20px
+      width: 250px
+
+    &.block_1_text i, &.block_2_text i, &.block_3_text i, &.block_4_text i
+      font-size: 16px
+
+  section.section_main div.main div.name_name
+    text-align: center
+
+  div
+    &.p_2
+      font-size: 16px
+      margin-left: 2%
+      margin-right: 2%
+      text-wrap: pretty
+
+    p
+      &.wed_place, &.cafe
+        font-size: 16px
+        margin-left: 2%
+        margin-right: 2%
+        text-wrap: pretty
+
+    &.way_text p, &.wishes p, &.quest_text, &.joy
+      font-size: 16px
+      margin-left: 2%
+      margin-right: 2%
+      text-wrap: pretty
+
+@media (max-width: 401px)
+  div
+    &.dear
+      height: 130px
+      width: 350px
+      background: url("../img/welcome.png") center center no-repeat
+      background-size: cover
+
+    &.p_2
+      font-size: 12px
+      margin-left: 3%
+      margin-right: 3%
+
+    p
+      &.wed_place, &.cafe
+        font-size: 12px
+        margin-left: 3%
+        margin-right: 3%
+
+    &.way_text p, &.wishes p, &.quest_text
+      font-size: 12px
+      margin-left: 3%
+      margin-right: 3%
+
+    &.p_3
+      font-size: 36px
+      margin-left: 3%
+      margin-right: 3%
+
+    &.programm_day
+      display: block
+      position: relative
+      height: 150px
+      width: 370px
+      background: url("../img/programm.png") center center no-repeat
+      background-size: cover
+      margin: 0 auto
+
+    &.quest_guest
+      display: block
+      position: relative
+      height: 150px
+      width: 370px
+      background: url("../img/quest.png") center center no-repeat
+      background-size: cover
+      margin: 0 auto      
+
+@media (max-width: 350px)
+  div
+    &.block_1_text, &.block_2_text, &.block_3_text, &.block_4_text
+      font-size: 18px
+      width: 200px
+      line-height: 1.3em
+
+    &.block_1_text i, &.block_2_text i, &.block_3_text i, &.block_4_text i
+      font-size: 14px
+
+  section.section_7
+    display: flex
+    position: relative
+    height: 850px
+    justify-content: center
+
+  div.way_programm
+    display: flex
+    position: relative
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    height: 780px
+
+  section.section_8 div.flex
+    margin-left: 3%
+    margin-right: 3%
+
+  div
+    &.dear
+      height: 100px
+      width: 330px
+      background: url("../img/welcome.png") center center no-repeat
+      background-size: cover
+
+    &.p_2
+      font-size: 12px
+      margin-left: 3%
+      margin-right: 3%
+
+    p
+      &.wed_place, &.cafe
+        font-size: 12px
+        margin-left: 3%
+        margin-right: 3%
+
+    &.way_text, &.wishes p, &.quest_text
+      font-size: 12px
+      margin-left: 3%
+      margin-right: 3%
+
+    &.p_3
+      font-size: 30px
+      margin-left: 3%
+      margin-right: 3%
+
+@media (min-width: 2200px)
+  section.section_main
+    display: block
+    position: relative
+    height: 760px
+    min-height: 100%
+    padding-bottom: 13px
+    margin-bottom: 15px
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)), url("../img/WE.jpeg") center -1200px no-repeat
+    background-size: cover
+    background-attachment: fixed
+
+@media (min-width: 2800px)
+  section.section_main
+    display: block
+    position: relative
+    height: 760px
+    min-height: 100%
+    padding-bottom: 13px
+    margin-bottom: 15px
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)), url("../img/WE.jpeg") center -1600px no-repeat
+    background-size: cover
+    background-attachment: fixed

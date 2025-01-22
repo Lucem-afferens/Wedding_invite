@@ -12,34 +12,6 @@ a {
     text-decoration: none;
 }
 
-@-webkit-keyframes fade-in {
-    from {
-        scale: 1.2;
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes fade-in {
-    from {
-        scale: 1.2;
-        opacity: 0;
-    }
-}
-
-@-o-keyframes fade-in {
-    from {
-        scale: 1.2;
-        opacity: 0;
-    }
-}
-
-@-ms-keyframes fade-in {
-    from {
-        scale: 1.2;
-        opacity: 0;
-    }
-}
-
 @keyframes fade-in {
     from {
         scale: 1.2;
