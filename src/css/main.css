@@ -990,11 +990,43 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
         min-height: 100%;
         padding-bottom: 13px;
         margin-bottom: 15px;
-        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,75)), url("../img/WE.jpeg")  center -700px no-repeat;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75)), url("../img/WE.jpeg")  center center no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }   
 } 
+
+@media (max-width: 845px) {
+    @-webkit-keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }
+    
+    @-moz-keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }
+    
+    @-o-keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }
+    
+    @-ms-keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }
+}
 
 @media (max-width: 701px) {
     .we {
@@ -1053,19 +1085,6 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
         margin-right: 2%;
         text-wrap: pretty;
     }
-
-    section.section_main {
-        display: block;
-        position: relative;
-        height: 760px;
-        min-height: 100%;
-        padding-bottom: 13px;
-        margin-bottom: 15px;
-        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,75)), url("../img/WE.jpeg")  center center no-repeat;
-        background-size: cover;
-        background-attachment: scroll;
-        background-attachment: fixed;
-    }   
 }
 
 @media (max-width:401px) {
@@ -1160,4 +1179,31 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
     }
 }
 
+@media (min-width: 2200px) {
+    section.section_main {
+        display: block;
+        position: relative;
+        height: 760px;
+        min-height: 100%;
+        padding-bottom: 13px;
+        margin-bottom: 15px;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75)), url("../img/WE.jpeg")  center -1200px no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }  
+}
+
+@media (min-width: 2800px) {
+    section.section_main {
+        display: block;
+        position: relative;
+        height: 760px;
+        min-height: 100%;
+        padding-bottom: 13px;
+        margin-bottom: 15px;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75)), url("../img/WE.jpeg")  center -1600px no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }  
+}
 
