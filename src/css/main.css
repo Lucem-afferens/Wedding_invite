@@ -1085,6 +1085,18 @@ div.hr_1, div.hr_2, div.hr_3, div.hr_4, div.hr_5, div.hr_6, div.hr_7, div.hr_8 {
         margin-right: 2%;
         text-wrap: pretty;
     }
+
+    section.section_main {
+        display: block;
+        position: relative;
+        height: 760px;
+        min-height: 100%;
+        padding-bottom: 13px;
+        margin-bottom: 15px;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,75)), url("../img/WE.jpeg")  center -700px no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }   
 }
 
 @media (max-width:401px) {
