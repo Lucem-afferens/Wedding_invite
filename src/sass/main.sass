@@ -198,47 +198,6 @@ div
     animation-timeline: --fade-in-image
     animation-range: 15% 50%
 
-.countdown 
-  display: flex
-  position: relative
-  justify-content: center
-  align-items: space-around
-  top: 6.6rem
-  width: 80%
-  font-family: "Comforter", serif
-  font-weight: 400
-  font-style: normal
-  font-size: 2rem
-  text-transform: none
-  text-shadow: -5px 6px 5px #ffc0cb  
-  animation-name: fade-in
-  animation-fill-mode: both
-  animation-timing-function: linear
-  view-timeline-name: --fade-in-image
-  animation-timeline: --fade-in-image
-  animation-range: 15% 50%
-
- 
-.countdown-item 
-  margin: 0 20px
-  text-align: center
-  width: 100%
-
- 
-.countdown-item span 
-  display: block
-  font-size: 4rem
-  line-height: 4rem
-  
-
- 
-.label 
-  font-size: 0.8em
-  color: #999
-  margin-top: 2rem
-  margin-bottom: 2rem
-
-
 section.section_3
   height: 2100px
   padding-top: 30vh
@@ -932,10 +891,6 @@ div
     background-size: cover
     background-attachment: fixed
 
-@media (max-width: 1024px)
-  .countdown-item span 
-    font-size: 3rem
-
 @media (max-width: 845px)
   @-webkit-keyframes fade-in
     from
@@ -1015,13 +970,6 @@ div
     background-size: cover
     background-attachment: scroll
 
-  .countdown
-    width: 10vw
-
-  .countdown-item span.label
-    font-size: 2rem
-    line-height: 0
-
 @media (max-width: 501px)
   div
     &.block_1_img, &.block_2_img, &.block_3_img, &.block_4_img
@@ -1086,12 +1034,6 @@ div
       font-size: 36px
       margin-left: 3%
       margin-right: 3%
-
-    .countdown-item span.label
-      font-size: 24px
-      margin-left: 3%
-      margin-right: 3%
-
 
     &.programm_day
       display: block
